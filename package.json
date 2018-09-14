@@ -1,0 +1,22 @@
+{
+  "name": "dundas-connector",
+  "version": "1.0.4",
+  "license": "MIT",
+  "scripts": {
+    "ts-node": "node -r ./bin/ts-node.js",
+    "ts-node:inspect": "node --inspect=9999 --inspect -r ./bin/ts-node.js",
+    "ts-node:inspect:brk": "node --inspect=9999 --inspect-brk -r ./bin/ts-node.js",
+    "start": "npm run ts-node src/start.ts",
+    "start:dev": "npm run ts-node:inspect src/start.ts",
+    "start:dev:brk": "npm run ts-node:inspect:brk src/start.ts"
+  },
+  "main": "lib/dundasConnector.js",
+  "dependencies": {
+    "requestretry": "2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "10.9.3",
+    "ts-node": "7.0.1",
+    "typescript": "3.0.3"
+  }
+}
