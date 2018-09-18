@@ -5,6 +5,10 @@ type AccountName = string;
 type SessionId = string;
 const INVALID_SESSION_ERROR = 'Dundas.BI.InvalidSessionException';
 
+
+export function createConnector(dundasUrl: string, dundasAdmin: string, password: string, accounts: DundasAccount[], logger: Logger) {
+    return new DundasConnector(dundasUrl, dundasAdmin, password, accounts, logger);
+}
 export interface DundasAccount {
     accountName: AccountName;
     password: string;

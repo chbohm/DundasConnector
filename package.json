@@ -1,6 +1,6 @@
 {
-  "name": "dundas-connector",
-  "version": "1.0.4",
+  "name": "dundas-session-connector",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "ts-node": "node -r ./bin/ts-node.js",
